@@ -14,6 +14,12 @@ function generateToken():string {
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $token = generateToken();
 }
+
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+    $session_data['token'] = $token;
+}
+
 ?>
 
 <!doctype html>
