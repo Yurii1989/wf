@@ -1,0 +1,16 @@
+{
+    "name": "wf3/exercise4",
+    "description": "Libraries for exercises",
+    "type": "project",
+    "license": "proprietary",
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/security": "^4.2@stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "Model\\": "Model/",
+            "Exception\\": "Exception/"
+        }
+    }
+}
